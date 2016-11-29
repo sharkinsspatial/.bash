@@ -8,3 +8,5 @@ alias psql=/usr/local/opt/postgresql/bin/psql
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 # Work around bug in browserify
 ulimit -n 2560
+export NVM_DIR=~/.nvm
+source ~/.nvm/nvm.sh
