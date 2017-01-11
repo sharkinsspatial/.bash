@@ -10,3 +10,7 @@ alias psql=/usr/local/opt/postgresql/bin/psql
 ulimit -n 2560
 export NVM_DIR=~/.nvm
 source ~/.nvm/nvm.sh
+# Git autocomplete
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
