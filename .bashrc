@@ -1,6 +1,6 @@
 alias ls='ls -alh'
 PS1="\[\e[01;31m\]\u \w $ \[\e[00m\]"
-set -o vi
+#set -o vi
 
 ###Bash-completion ###
 if [ -f `brew --prefix`/etc/bash_completion ]; then
@@ -12,3 +12,6 @@ export NVM_DIR="/Users/sharkins/.nvm"
 
 # Work around bug in browserify
 ulimit -n 2560
+
+#Docker
+alias dockerstart='bash --login /Applications/Docker/Docker\ Quickstart\ Terminal.app/Contents/Resources/Scripts/start.sh'
