@@ -1,7 +1,7 @@
 alias ls='ls -alh'
 PS1="\[\e[01;31m\]\u \w $ \[\e[00m\]"
 
-eval "$(pyenv init -)"
+eval "$(pyenv init --path)"
 
 ###Bash-completion ###
 if [ -f `brew --prefix`/etc/bash_completion ]; then
@@ -22,3 +22,4 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 
 set -o vi
 eval "$(direnv hook bash)"
+export INPUTRC=~/.inputrc
